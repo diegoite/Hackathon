@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+:root{
+    --background: linear-gradient(135deg, #4243475b 0%, #afacb32f   100%);
+    --color-primary: #19191b;
+    --color-secondary:6 #444246;
+    --boton-padding: 20px 40px;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.subtitle{
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.subtitle1{
+    text-align: center;
+}
+.generara{
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.resultado{
+    text-align: center;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80xp 0px;
+    max-width: 1200xp;
+}
+
+.superior{
+    height: 100vh;
+    background-image: var(--background), url('../assets/superior.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.superior.container{
+    padding: 0;
+}
+
+.superior__container{
+    display: flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+    color: #fff;
+}
+
+.navegator{
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.navegator__items{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: inherit;
+}
+
+.navegator__items--gg{
+    border: 1px solid rgb(255, 255, 255);
+    color: #ffffff;
+}
+
+.superior__texts{
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.superior__title{
+    font-size: 3.2rem;
+}
+
+.superior__subtitle{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 15px 0px;
+}

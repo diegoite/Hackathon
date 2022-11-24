@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="styles.css">
+<title>Generador</title>
+</head>
+<body>
+    <header class="superior">
+        <div class="container">
+            <nav class="navegator">
+                <a href="http://127.0.0.1:5500/index.html" class="navegator__items navegator__items--gg">Inicio <br></a>
+                <a href="global.html" class="navegator__items navegator__items">Generador Global <br></a>
+                <a href="registro.html" class="navegator__items navegator__items">Generador de registro <br>basico</a>
+            </nav>
+            <section class="superior__container">
+                <div class="superior__texts">
+                    <h1 class="superior__title">GENERADOR DE DATOS</h1>
+                    <h2 class="superior__subtitle">Y dime, si tu enemigo fuera invisible 
+                        ¿Donde golpearías?</h2>
+                    </h3><br><hr><br>
+                    <h2 class="generara">
+<a href='global.html' class="generar_registro" onclick='window.location.reload()'>GENERADOR DE DATOS BASICOS</a>
+                    </h2><hr>
+                </div>
+            </section>
+        </div>
+
+        </header>
+        <main>
+            <section class="generar__registro">
+            </h3><br><hr>
+            <br><br>
+            <h2 class="subtitle">Nombre Completo: </h2>
+            <h3 class="subtitle1"><hr><br>
+                <script type='text/javascript'>
+                    consonnants = [
+                    'Manuel', 'Raziel', 'Estoyko', 'Diego', 'Juan', 'José Luis', 'José','María Guadalupe','Francisco','Guadalupe'
+                     ,'María','Juana','Antonio','Jesús','Miguel Ángel','Pedro','Alejandro','Manuel','Margarita','María Del Carmen','Juan Carlos'
+                    ,'Roberto','Fernando','Daniel','Carlos','Jorge','Ricardo','Miguel','Eduardo','Javier','Rafael','Martín','Raúl','David'
+                    ,'Josefina','José Antonio','Arturo','Marco Antonio','José Manuel','Francisco Javier','Enrique','Verónica','Gerardo'
+                    ,'María Elena','Leticia','Rosa','Mario','Francisca','Alfredo','Teresa','Alicia','María Fernanda','Sergio','Alberto']
+            ;
+            
+            
+                    lastname = ['  Rodriguez',' Sanchez',' Lopez',' Garcia',' Puebla',' Estrada',' Santillan',
+                        ' Nuñez',' Estrada',' Gomez',' Ibarra',' Avila',' Moreno',' Reyes',' Jacques',' Flores'
+                        ,' Vazquez',' Morales',' Torres',' Diaz',' Mendoza',' Gutierres',' Duarte',' Castillo'
+                        ,' Mendez',' Ramos',' Medina',' Guzman',' Ortega',' Bautista',' Alvarado',' Cardoza',' Espinosa'
+                        ,' Lara']
+            
+            
+                    lastname2 = [' Rodriguez',' Sanchez',' Lopez',' Garcia',' Puebla',' Estrada',' Santillan',
+                        ' Nuñez',' Estrada',' Gomez',' Ibarra',' Avila',' Moreno',' Reyes',' Jacques',' Flores'
+                        ,' Vazquez',' Morales',' Torres',' Diaz',' Mendoza',' Gutierres',' Duarte',' Castillo'
+                        ,' Mendez',' Ramos',' Medina',' Guzman',' Ortega',' Bautista',' Alvarado',' Cardoza',' Espinosa'
+                        ,' Lara']
+              
+            
+                        <!--Nombre-->
+                    name = "";
+                    length = Math.floor(Math.random() * 1) + 1; 
+                    for (i = 0; i < length; i++)
+                        name += (consonnants[Math.floor(Math.random()*consonnants.length)]
+                                 + lastname[Math.floor(Math.random()*lastname.length)]
+                                 + lastname2[Math.floor(Math.random()*lastname2.length)]);
+                    name = name.charAt(-1).toUpperCase() + name.slice(0);
+                    document.write("<p id='name'>" + name + "</p>"); 
+                                </script>
+                        </h3><br><hr>
+                        <br><br>
+                        <h2 class="subtitle">Correo Electronico: </h2>
+                        <h3 class="subtitle1"><hr><br>
+                <script type="text/javascript">
+                    consonnants = ['a','e','i','o','u','b','c','d','f','g','h','i','j','k','l','m','n','ñ','p','q','r','s','t','v','w','x','y','z'];
+                    vowels = ['a','1','r','0','u','g','s'];
+                    name = "";
+                    length = Math.floor(Math.random() * 7) + 2; 
+                    for (i = 0; i < length; i++)
+                    name += (consonnants[Math.floor(Math.random()*consonnants.length)]
+                    + vowels[Math.floor(Math.random()*vowels.length)]);
+                    name = name.charAt(3).toUpperCase() + name.slice() + "@gmail.com";
+                    document.write("<p id='name' >" + name + "</p>");
+                </script>
+                        </h3><br><hr>
+                        <br><br>
+                        <h2 class="subtitle">Contraseña: </h2>
+                        <h3 class="subtitle1"><hr><br>
+                <script type="text/javascript">
+                        consonnants2= ['b','c','d','f','g','h','i','j','k','l','m','n','ñ','p','q','r','s','t','v','w','x','y','z' ];
+                        vowels2 = ['4','3','1','0','u',];
+                        name = "";
+                        length = Math.floor(Math.random() * 9) + 4; 
+                        for (i = 0; i < length; i++)
+                        name += (consonnants2[Math.floor(Math.random()*consonnants2.length)]
+                        + vowels2[Math.floor(Math.random()*vowels2.length)]);
+                        name = name.charAt(-1).toUpperCase() + name.slice();
+                        document.write("<p id='name'>" + name + "</p>");
+                </script>
+                                        </h3><br><hr><br>
+                                        <h2 class="generara">
+<a href='#' class="generar_registro" onclick='window.location.reload()'>Generarador de Registro</a>
+                                        </h2><hr>
+                                        
+
+                
+                <br><br><br>
+            </section>
+        </main>
+
+    <script src="https://kit.fontawesome.com/9fb975461a.js"
+    crossorigin="anonymous"></script>
+    <p> by Equipo 2 - Diego, Hugo, Estoyko</p>
+</body>
+</html>
